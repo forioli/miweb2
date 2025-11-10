@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 11</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            height: 50px;
+            background-color: aquamarine;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        nav a{
+            padding: 5px;
+            background-color: antiquewhite;
+        }
+
+        nav img{
+            position: absolute;
+            left: 0;
+        }
+
+        .feed{
+            width: 70vw;
+            /* height: 80vh; */
+        }
+
+        aside{
+            background-color: antiquewhite;
+            width: 30vw;
+            height: 273vh;
+
+        }
+
+        main{
+            display: flex;
+        }
+
+
+
+        .feed li{
+            display: block;
+        }
+        hr {
+
+        }
+        @media (max-width: 768px){
+            nav ul{
+                background-color: blue;
+                flex-direction: column;
+                height: 100%;
+            }
+            nav li{
+                height: 100%;
+            }
+            nav a{
+                display: inline-block;
+                width: 100%;
+            }
+            aside{
+                order: -1;
+                width: 100%;
+            }
+            main{
+                flex-direction: column;
+            }
+            ul{
+                flex-direction: column;
+            }
+            ul {
+                flex-direction: column; /* Cambia de fila a columna */
+                align-items: flex-end;  /* Mantiene alineado a la derecha */
+            }
+
+            ul li {
+                margin-bottom: 10px; /* Espaciado entre los links */
+            }
+            .feed{
+                width: 100%;
+            }
+            footer{
+                flex-direction: column;
+                display: inline-block;
+                width: 100%;
+            }
+                   }
+        footer{
+            background-color: rgb(35,31,31);height: 80%;text-align: center
+        }
+        .footertext{
+            font-family: 'Times New Roman', Times, serif;color: rgb(117,109,110);font-size: 17px;text-align: left;margin: 20px;
+        }
+        li{
+            display: inline;text-decoration: none;padding: 10px;
+        }
+        h2{
+            margin-bottom: 20px; text-align: left;padding-left: 30px;padding-top: 15px;
+        }
+        p{
+            padding-left: 30px;
+        }
+        .columna{
+            display: inline-block; width: 25vw;height:50%;vertical-align: top;margin: 50px;
+        }
+        .columna li{
+            list-style-type: circle; display: inline-block;
+        }
+        .description{
+            font-size: 13px; color: rgb(48, 48, 48);font-family: "Arial", serif;padding: 20px;
+        }
+
+    </style>
+</head>
+<body style="margin: 0px;background-size: contain;">
+
+    <ul style="text-align: right;margin: 0px;text-decoration: underline;padding: 20px;color: rgb(57,56,57);position:relative;background-color: antiquewhite;">
+        <li><a href="index.html" style="color: rgb(57,56,57);">Inicio</a></li>
+        <li><a href="sobremi.html" style="color: rgb(57,56,57);">Sobre Mi</a></li>
+        <li><a href="tablas.html" style="color: rgb(57,56,57)">Tablas</a></li>
+        <li><a href="lista.html" style="color: rgb(57,56,57)">Lista</a></li>
+        <li><a href="playlist.html" style="color: rgb(57,56,57)">Playlist</a></li>
+        <li><a href="juegotrivia/iniciojuego.html" style="color: rgb(57,56,57)">Jugar</a></li>
+        <li><a href="linktree.html" style="color: rgb(57,56,57)">Linktree</a></li>
+        <li><a href="blog.html" style="color: rgb(217,155,88)">Blog</a></li>
+    </ul>
+
+    <main>
+
+        <section class="feed">
+            <article>
+                <h1>Mis Viajes</h1>
+                <h2><a href="postblog1.html" style="text-decoration: none;">Mar de las Pampas 2025</a></h2>
+                <ul style="display: flex;">
+                    <li>
+                        <img src="img/mardelaspampasfoto1.JPG" alt="mardelaspampasfoto1" width="330px">
+                    </li>
+                    <li>
+                        <a>
+
+                            🗺️ Mar de las Pampas - Febrero 2025: Desconexión Total entre Bosque y Mar
+                            ¡Volví a Mar de las Pampas y, una vez más, me conquistó! Febrero es un mes ideal; ya pasó el pico de la temporada y la paz que se respira es increíble. Este viaje fue la excusa perfecta para desacelerar.
+                            
+                            Lo que más me gusta de este lugar es esa sensación de estar en un pueblo mágico, donde las calles son de arena y los pinos gigantes te hacen olvidar el cemento. El plan de cada día era simple... 
+                            </a>
+                    </li>
+                </ul>
+                <p>Publicado por Fernando Orioli - Febrero 2025</p>
+                <hr>
+            </article>
+            <article>
+                <h2><a href="postblog2.html" style="text-decoration: none;">Pinamar 2024</a></h2>
+                <ul style="display: flex;">
+                    <li>
+                        <img src="img/pinafoto1.jpg" alt="pinafoto1" width="330px">
+                    </li>
+                    <li>
+                        <a>Pinamar fue el destino elegido para un clásico viaje de verano. Es de esos lugares que siempre tienen algo para ofrecer, ya sea que busques relajo o un poco más de movimiento.
+
+                            Si bien Pinamar tiene esa fama de ser más glamoroso, lo que más disfrutamos fue la combinación de su playa amplia con la belleza de su bosque de pinos.
+                            
+                            El Centro: Un paseo obligatorio por la Avenida Bunge al atardecer, ver el movimiento, parar a tomar un helado. Es el corazón de la ciudad y siempre hay gente y actividades.
+                            
+                            La Playa: La costa es genial, perfecta para caminatas largas o simplemente instalarse. Nosotros optamos por un parador más tranquilo, alejados un poco del centro, donde el mar es protagonista...</a>
+                    </li>
+                </ul>
+                <p>Publicado por Fernando Orioli</p>
+                <hr>
+            </article>
+            <article>
+                <h2><a href="postblog3.html" style="text-decoration: none;">Uruguay - Colonia 2024</a></h2>
+                <ul style="display: flex;">
+                    <li>
+                        <img src="img/uy1.JPG" alt="pinafoto1" width="330px">
+                    </li>
+                    <li>
+                        <a>A veces, la mejor aventura es la que se organiza en el último minuto. Este viaje a Colonia del Sacramento fue exactamente eso: una escapada de un día, cruzando el Río de la Plata en ferry, que se sintió como un verdadero viaje en el tiempo.
+
+                            Llegamos temprano y lo primero que hicimos fue perdernos en el Barrio Histórico, Patrimonio de la Humanidad. No hay mejor plan que caminar sin rumbo por esas calles de piedra (¡cuidado con los adoquines!), flanqueadas por casas coloniales que parecen congeladas en el siglo XVIII. Los autos antiguos estacionados son el toque perfecto para la foto...</a>
+                    </li>
+                </ul>
+                <p>Publicado por Fernando Orioli</p>
+                <hr>
+            </article>
+            <article>
+                <h2><a href="postblog4.html" style="text-decoration: none;">Brasil - Porto Seguro 2022</a></h2>
+                <ul style="display: flex;">
+                    <li>
+                        <img src="img/brasil1.jpg" alt="pinafoto1" width="330px">
+                    </li>
+                    <li>
+                        <a>¡Volver a ver estas fotos me llena de energía! Porto Seguro no fue solo un viaje, fue el viaje. Ese hito que marca el fin del colegio y el comienzo de todo lo nuevo. Y sí, fue tan épico como todos dicen.
+
+                            Porto Seguro es el destino perfecto para un viaje de egresados: combina playas increíbles, fiesta, y una cultura vibrante.
+                            
+                            El Clásico: El Axé en la Playa: Lo más divertido era la tarde en la playa de Taperapuã. Música a todo volumen, profesores de baile enseñando Axé (¡intentar seguirles el ritmo era un desafío!) y ese ambiente de euforia colectiva. El megapolo de las noches, por supuesto, fue el centro de la fiesta...</a>
+                    </li>
+                </ul>
+                <p>Publicado por Fernando Orioli</p>
+                <hr>
+            </article>
+            <article>
+                <h2><a href="postblog5.html" style="text-decoration: none;">Rosario 2021</a></h2>
+                <ul style="display: flex;">
+                    <li>
+                        <img src="img/rosario1.jpg" alt="pinafoto1" width="330px">
+                    </li>
+                    <li>
+                        <a>Rosario es una ciudad que me encanta, y este viaje de 2021, que hicimos en familia, fue la excusa perfecta para redescubrirla con otros ojos. Es una escapada ideal para el fin de semana, con esa mezcla perfecta de gran ciudad y tranquilidad ribereña.
+
+                            El plan central del viaje fue, por supuesto, el Río Paraná. La Costanera rosarina es un espectáculo.
+                            
+                            El Monumento: Visita obligada al Monumento Nacional a la Bandera. Subir a la torre es un ritual, y la vista que ofrece del río y la ciudad es imponente. Además, el parque circundante es ideal para que los chicos corran y jueguen.
+                            
+                            Un Paseo por el Río...</a>
+                    </li>
+                </ul>
+                <p>Publicado por Fernando Orioli</p>
+                <hr>
+            </article>
+        </section>
+
+        <aside>
+            <section class="perfil">
+                <img src="img/yo2.jpeg" width="240px" style="width: 200px; border-radius: 100%;position: relative;left: 25%;margin-top: 10%;margin-bottom: 10%;">
+                <h3 style="position: relative; text-align: center;">Soy Fernando Orioli.</h3>
+                <p class="description"style="position: relative;margin-bottom: 0px;">En búsqueda de aplicar y desarrollar los conocimientos adquiridos durante mis estudios universitarios en las áreas de Análisis de Datos, Diseño UX/UI y Marketing Digital, integrándome al mercado laboral y aportando valor a la organización a través de un rol comprometido y orientado al aprendizaje práctico.</p>
+            </section>
+            <section style="display: flex;flex-direction: column;align-items: center;">
+                <a href="https://www.linkedin.com/in/fernando-orioli/" target="_blank"><img src="img/linkedin.png" alt="Logo Linkedin" height="20px" style="margin-bottom: 20px;margin-top: 30px;"><br></a>
+                <a href="https://www.behance.net/fernandoorioli" target="_blank"><img src="img/behance.svg" alt="Logo Behance" height="20px" style="border-radius: 10px;" style="margin-bottom: 20px;"><br></a>              
+                <a href="https://www.flickr.com/photos/194812100@N07/" target="_blank"><img src="img/flickr.png" height="20px" style="margin-bottom: 20px;margin-top: 20px;"></a>
+            </section>
+            <section class="redes" style="position: relative;left: 25%;">
+                <a style="position: relative;top: 40px;display: block;text-decoration: none;left: 30px;" href="sobremi.html">Un poco sobre mi.</a>
+                <a style="position: relative;top: 40px;display: block;text-decoration: none;" href="form.html">¡Pongamonos en contacto!</a>
+                <h3 style="position: relative;top: 55px; text-align: center;left: -95px;">Suscribite al Newsletter</h3>
+                <form action="recibido.html" method="get" style="margin-top: 65px;">
+
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="Email">
+                    <p class="continuereading" style="display:inline-block;position: relative;left: 0%;top: 40px;"><a href="suscrito.html">Suscribirme</a></p>
+                    <br>
+                
+                </form>
+                
+            </section>
+            <section class="redes" style="position: relative;left: 25%;top: 100px;">
+                <h3 style="position: relative;bottom: 16px; text-align: center;left: -95px;">Lista de Posteos</h3>
+                <a href="postblog1.html">Post Mar de las Pampas 2025</a>
+                <br>
+                <a href="postblog2.html">Post Pinamar 2024</a>
+                <br>
+                <a href="postblog3.html">Post Uruguay - Colonia 2024</a>
+                <br>
+                <a href="postblog4.html">Post Brasil - Porto Seguro 2022</a>
+                <br>
+                <a href="postblog5.html">Post Rosario 2021</a>
+                <br>
+                <a href="posts.html">Ver todos los posteos</a>
+            </section>
+        </aside>    
+            
+            
+    </main>
+
+    <footer>
+        <div class="columna">
+            <a class="footertitle">Mapa de Sitio</a>
+            <ul class="footertext" style="display: grid;" style="margin-bottom: 20px;">
+                <li>
+                    <a class="footertext" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="footertext" href="sobremi.html">Sobre Mi</a>
+                </li>
+                <li>
+                    <a class="footertext" href="tablas.html">Tabla</a>
+                </li>
+                <li>
+                    <a class="footertext" href="lista.html">Lista</a>
+                </li>
+                <li>
+                    <a class="footertext" href="playlist.html">Playlist</a>
+                </li>
+                <li>
+                    <a class="footertext" href="juegotrivia/iniciojuego.html">Jugar</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="columna">
+            <a class="footertitle">Otra sección importante</a>
+            <ul class="footertext" style="display: grid;" style="margin-bottom: 20px">
+                <li>
+                    <a class="footertext">Aviso de Privacidad</a>
+                </li>
+                <li>
+                    <a class="footertext">Condiciones generales </a>
+                </li>
+                <li>
+                    <a class="footertext">Pie de imprenta</a>
+                </li>
+            </ul>
+            <a href="#"><img src="img/arrow.png" alt="arrow" style="height: 50px;margin-top: 250px;"></a>
+        </div>
+
+        <div class="columna">
+            <a class="footertitle">Redes Sociales</a>
+            <ul class="footertext" style="display: grid;" style="margin-bottom: 20px;">
+                <li>
+                    <a class="footertext" href="https://www.flickr.com/photos/194812100@N07/">Flickr</a>
+                </li>
+                <li>
+                    <a class="footertext" href="https://www.linkedin.com/in/fernando-orioli/">LinkedIn</a>
+                </li>
+                <li>
+                    <a class="footertext" href="https://www.behance.net/fernandoorioli">Behance</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

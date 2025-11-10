@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP - Prueba - Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        li{
+            display: inline;text-decoration: none;padding: 10px;
+        }
+        footer{
+            background-color: rgb(35,31,31);height: 80%;text-align: center;
+        }
+        aside li{
+            list-style-type: georgian; margin-top: 20px; text-align: left;
+        }
+        .columna{
+            display: inline-block; width: 25vw;height:50%;vertical-align: top;margin: 50px;
+        }
+        .columna li{
+            list-style-type: circle; display: inline-block;
+        }
+        .footertext{
+            font-family: 'Times New Roman', Times, serif;color: rgb(117,109,110);font-size: 17px;text-align: left;margin: 20px;
+        }
+        .color{
+            color: red;
+        }
+    </style>
+</head>
+<body style="margin: 0; text-align: center;background-image: url(../img/montaña.jpg);background-size: contain;">
+
+    <ul style="text-align: right;margin: 0px;text-decoration: none;padding: 20px;color: rgb(57,56,57);">
+        <li><a href="linktree.html" style="color: rgb(57,56,57)">Linktree</a></li>
+        <li><a href="index.html" style="color: rgb(217,155,88);">Inicio</a></li>
+        <li><a href="sobremi.html" style="color: rgb(57,56,57);">Sobre Mi</a></li>
+        <li><a href="tablas.html" style="color: rgb(57,56,57)">Tablas</a></li>
+        <li><a href="lista.html" style="color: rgb(57,56,57)">Lista</a></li>
+        <li><a href="playlist.html" style="color: rgb(57,56,57)">Playlist</a></li>
+        <li><a href="juegotrivia/iniciojuego.html" style="color: rgb(57,56,57)">Jugar</a></li>
+    </ul>
+
+    <h1 style="padding-top: 60px;" id="titulo">Mi nombre es Fernando Orioli</h1>
+    <h2>Bienvenidos a mi <br> Pagina</h2>
+    <br>
+    <blockquote style="color: grey;margin-top: -20px;">Foto con mi familia.</blockquote>
+    <img src="img/familia.JPG" alt="Foto de mi Familia" height="300" style="border-radius: 5px; margin-top: -10px;filter: blur(2px)">
+    <img src="img/separador.gif" alt="gif separador" width="100%" height="150px" style="margin-top: -36px;">
+    <h2 style="margin-top: -75px;">Mis Redes Sociales</h2>
+    <a href="https://www.linkedin.com/in/fernando-orioli/" target="_blank"><img src="img/linkedin.png" alt="Logo Linkedin" height="50px" style="margin-bottom: 20px;"><br></a>
+    <a href="https://www.behance.net/fernandoorioli" target="_blank"><img src="img/behance.svg" alt="Logo Behance" height="70px" width="182.92" style="border-radius: 10px;" style="margin-bottom: 20px;"><br></a>              
+    <a href="https://www.flickr.com/photos/194812100@N07/" target="_blank"><img src="img/flickr.png" height="50px" width="182.92" style="margin-bottom: 20px;margin-top: 20px;"></a>
+    <section style="text-align: left;margin-top: 20px;margin-left: 35px;margin-bottom: 35px;">
+    </section>
+
+    <footer>
+        <div class="columna">
+            <a class="footertitle">Mapa de Sitio</a>
+            <ul class="footertext" style="display: grid;" style="margin-bottom: 20px;">
+                <li>
+                    <a class="footertext" href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="footertext" href="sobremi.html">Sobre Mi</a>
+                </li>
+                <li>
+                    <a class="footertext" href="tablas.html">Tabla</a>
+                </li>
+                <li>
+                    <a class="footertext" href="lista.html">Lista</a>
+                </li>
+                <li>
+                    <a class="footertext" href="playlist.html">Playlist</a>
+                </li>
+                <li>
+                    <a class="footertext" href="juegotrivia/iniciojuego.html">Jugar</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="columna">
+            <a class="footertitle">Otra sección importante</a>
+            <ul class="footertext" style="display: grid;" style="margin-bottom: 20px">
+                <li>
+                    <a class="footertext parrafo">Aviso de Privacidad</a>
+                </li>
+                <li>
+                    <a class="footertext parrafo">Condiciones generales </a>
+                </li>
+                <li>
+                    <a class="footertext">Pie de imprenta</a>
+                </li>
+            </ul>
+            <a href="#"><img src="img/arrow.png" alt="arrow" style="height: 50px;margin-top: 250px;"></a>
+        </div>
+
+        <div class="columna">
+            <a class="footertitle">Redes Sociales</a>
+            <ul class="footertext" style="display: grid;" style="margin-bottom: 20px;">
+                <li>
+                    <a class="footertext" href="https://www.flickr.com/photos/194812100@N07/">Flickr</a>
+                </li>
+                <li>
+                    <a class="footertext" href="https://www.linkedin.com/in/fernando-orioli/">LinkedIn</a>
+                </li>
+                <li>
+                    <a class="footertext" href="https://www.behance.net/fernandoorioli">Behance</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const titulo = document.getElementById("titulo")
+        titulo.style.color="red"
+        const parrafo=document.getElementsByClassName("parrafo")
+        parrafo[1].style.color="blue"
+        const titulo=document.createElement("h1")
+        titulo.textContent="hola mundo desde javascript"
+        const div=document.querySelector("div")
+        div.append(titulo)
+        titulo.classList.add("color")
+    </script>
+
+</body>
+</html>
